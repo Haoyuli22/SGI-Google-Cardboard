@@ -16,10 +16,28 @@ public class HumanControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckButtonName();
-        if (Input.GetKeyDown(KeyCode.Joystick1Button0)) {
+        React2();
+
+
+
+    }
+
+    void CheckButtonName() {
+        foreach (KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
+        {
+            if (Input.GetKeyDown(kcode))
+            {
+                text.text = "Key code down: " + kcode;
+                Debug.Log("Key code down: " + kcode);
+            }
+        }
+    }
+
+    void React() {
+        if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+        {
             //text.text = "Pressed: B"
-            Debug.Log("Pressed: B" );
+            Debug.Log("Pressed: B");
         }
 
         if (Input.GetKeyDown(KeyCode.Joystick1Button1))
@@ -46,18 +64,13 @@ public class HumanControl : MonoBehaviour
         {
             Debug.Log("Pressed: ZL");
         }
-
-
     }
 
-    void CheckButtonName() {
-        foreach (KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
+    void React2() {
+        if (Input.GetKeyDown((KeyCode)313))
         {
-            if (Input.GetKeyDown(kcode))
-            {
-                text.text = "Key code down: " + kcode;
-                Debug.Log("Key code down: " + kcode);
-            }
+            text.text = "Pressed: A";
+            
         }
     }
 }
