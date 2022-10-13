@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class HumanControl : MonoBehaviour
 {
+    public Text text;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,9 @@ public class HumanControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckButtonName();
         if (Input.GetKeyDown(KeyCode.Joystick1Button0)) {
+            //text.text = "Pressed: B"
             Debug.Log("Pressed: B" );
         }
 
@@ -51,6 +55,7 @@ public class HumanControl : MonoBehaviour
         {
             if (Input.GetKeyDown(kcode))
             {
+                text.text = "Key code down: " + kcode;
                 Debug.Log("Key code down: " + kcode);
             }
         }
