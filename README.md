@@ -16,9 +16,12 @@ TODO
 
 <h1>TBA</h1>
 <u>
-  Credits: Xinyu Jiang (xinyu.jiang@estudiantat.upc.edu) <br>
-  Credits: Haoyu Li (haoyu.li@estudiantat.upc.edu) <br>
-  Music:
+Credits:
+<ul>
+<li>Xinyu Jiang (xinyu.jiang@estudiantat.upc.edu) .</li>
+<li>Haoyu Li (haoyu.li@estudiantat.upc.edu) .</li>
+</ul>
+
 <ul>
 <li>1. TBA .</li>
 <li>2. TBA .</li>
