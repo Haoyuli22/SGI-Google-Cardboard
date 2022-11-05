@@ -8,17 +8,23 @@ public class EnemyHealthSalider : MonoBehaviour
     // Start is called before the first frame update
     public Slider healthbar;
 
-    public float maxHealth;
-    private float currentHealth;
+
     void Start()
     {
-        healthbar.maxValue = maxHealth;
-        currentHealth = maxHealth;
     }
 
+    public void Initiate(float maxHP) {
+        healthbar.maxValue = maxHP;
+    }
+
+    public void UpdateHealth(float currentHP) {
+        healthbar.value = currentHP;
+    }
     // Update is called once per frame
     void Update()
     {
         healthbar.transform.rotation = Quaternion.Euler(0, 0, 0);
     }
+
+
 }
