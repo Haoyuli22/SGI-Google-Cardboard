@@ -8,7 +8,7 @@ Base task:
 <li>2. Players can select and interact objects with 3DUI.</li>
 </ul>
 
-<h1>Bruixes de Temple de Milions de Pedres</h1>
+<h1>La Bruixa de Temple de Milions de Pedres</h1>
 <u>
 Credits:
 <ul>
