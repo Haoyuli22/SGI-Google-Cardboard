@@ -9,9 +9,9 @@ Base task:
 </ul>
 
 <b>Game's Name</b>:
-TBA
+Millionen Steine Temple
 
-<b>GDD</b>:
+<b>Millionen Steine Temple</b>:
 TODO
 
 <h1>TBA</h1>
