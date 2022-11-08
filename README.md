@@ -8,12 +8,6 @@ Base task:
 <li>2. Players can select and interact objects with 3DUI.</li>
 </ul>
 
-<b>Game's Name</b>:
-Millionen Steine Temple
-
-<b>Millionen Steine Temple</b>:
-TODO
-
 <h1>Millionen Steine Temple</h1>
 <u>
 Credits:
