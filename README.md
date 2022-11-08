@@ -14,7 +14,7 @@ Millionen Steine Temple
 <b>Millionen Steine Temple</b>:
 TODO
 
-<h1>TBA</h1>
+<h1>Millionen Steine Temple</h1>
 <u>
 Credits:
 <ul>
