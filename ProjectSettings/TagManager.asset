@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Cristal
   - Level
+  - MagicPizza
   layers:
   - Default
   - TransparentFX
