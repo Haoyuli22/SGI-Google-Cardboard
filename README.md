@@ -8,13 +8,7 @@ Base task:
 <li>2. Players can select and interact objects with 3DUI.</li>
 </ul>
 
-<b>Game's Name</b>:
-TBA
-
-<b>GDD</b>:
-TODO
-
-<h1>TBA</h1>
+<h1>La Bruixa de Temple de Milions de Pedres</h1>
 <u>
 Credits:
 <ul>
@@ -23,7 +17,7 @@ Credits:
 </ul>
 Musics:
 <ul>
-<li>1. TBA .</li>
-<li>2. TBA .</li>
+<li>1. Now, at the Beginning - Trails into reverie .</li>
+<li>2. With Mila's Divine Protection - Super Smash Bros. .</li>
 </ul>
 </u>
