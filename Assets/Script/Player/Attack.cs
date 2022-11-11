@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Attack : MonoBehaviour
 {
     // Start is called before the first frame update
     private Vector3 hit_point;
     private GameObject hit_object;
+
+    public Slider[] magic_charge;
+    public Text[] magic_text;
     public GameObject[] magic_pizza;
     public GameObject[] shootPrefabs;
 
