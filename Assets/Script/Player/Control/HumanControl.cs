@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class HumanControl : MonoBehaviour
 {
     public Text text;
+    public Camera main_camera;
+    public float rorate_speed = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +18,15 @@ public class HumanControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CheckButtonName();
+        ControlCamera();
 
 
 
+    }
+
+    void ControlCamera(){
+        Vector3 v3 = new Vector3(-Input.GetAxis("Vertical"), Input.GetAxis("Horizontal"), 0f);
+        main_camera.transform.Rotate(v3 * rorate_speed * Time.deltaTime);
     }
 
     void CheckButtonName() {

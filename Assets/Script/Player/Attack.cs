@@ -16,43 +16,49 @@ public class Attack : MonoBehaviour
 
     public int current_select = 0;
 
-
     public float attack_periot = 1.5f;
     private float attackCounter = 0;
+
+    private float global_charge_time = 4f;
+    private float[] local_charge_time;
+
+    private int max_magic_point = 10;
+    private int initial_magic_point = 10;
+    private int[] local_magic_point;
 
 
     void Start()
     {
+        local_charge_time = new float[magic_pizza.Length];
+        local_magic_point = new int[magic_pizza.Length];
+        for (int i = 0; i < local_charge_time.Length;i++) {
+            local_charge_time[i] = 0f;
+            local_magic_point[i] = 3;
+
+            magic_charge[i].maxValue = global_charge_time;
+            
+        }   
+
         attackCounter = attack_periot;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.mouseScrollDelta.y > 0) {
-            if (current_select > 0)
-            {
-                current_select--;
-            }
-            else {
-                current_select = magic_pizza.Length - 1;
-            }
-        }
-
-        if (Input.mouseScrollDelta.y < 0)
-        {
-            if (current_select < magic_pizza.Length - 1)
-            {
-                current_select++;
-            }
-            else
-            {
-                current_select = 0;
-            }
-        }
+        //Scroll up and down
+        ChangeAura();
 
         for(int i = 0; i < magic_pizza.Length; i++)
         {
+            local_charge_time[i] += Time.deltaTime;
+            if (local_charge_time[i] >= global_charge_time && local_magic_point[i] != max_magic_point) {
+                local_charge_time[i] = 0;
+                local_magic_point[i]++;
+                
+                magic_text[i].text = local_magic_point[i].ToString();
+            }
+            magic_charge[i].value = local_charge_time[i];
+
             //magic_pizza[i].transform.position = magic_pizza[current_select].transform.position;
             if (i == current_select)
             {
@@ -92,6 +98,32 @@ public class Attack : MonoBehaviour
             Destroy(projectileGameObject, 2);
 
             attackCounter = 0;
+        }
+    }
+
+    void ChangeAura() {
+        if (Input.mouseScrollDelta.y > 0)
+        {
+            if (current_select > 0)
+            {
+                current_select--;
+            }
+            else
+            {
+                current_select = magic_pizza.Length - 1;
+            }
+        }
+
+        if (Input.mouseScrollDelta.y < 0)
+        {
+            if (current_select < magic_pizza.Length - 1)
+            {
+                current_select++;
+            }
+            else
+            {
+                current_select = 0;
+            }
         }
     }
 }

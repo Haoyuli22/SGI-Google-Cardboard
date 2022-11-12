@@ -26,7 +26,7 @@ public class EnemyDamage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentHP == 0) {
+        if (currentHP <= 0) {
             enemy.die = true;
             Destroy(this);
         }

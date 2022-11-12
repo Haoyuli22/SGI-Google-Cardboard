@@ -28,7 +28,7 @@ public class CameraPointer : MonoBehaviour
     private GameObject _gazedAtObject = null;
 
     public GameObject ObjectGazed = null;
-    public Vector3 hitpoint = new Vector3(0,0,0);
+    public Vector3 hitpoint = new Vector3(0, 0, 0);
 
     /// <summary>
     /// Update is called once per frame.
@@ -36,7 +36,7 @@ public class CameraPointer : MonoBehaviour
     public void Update()
     {
         ObjectGazed = _gazedAtObject;
-        
+
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
         // at.
         RaycastHit hit;
@@ -51,7 +51,7 @@ public class CameraPointer : MonoBehaviour
                 _gazedAtObject = hit.transform.gameObject;
                 //_gazedAtObject.SendMessage("OnPointerEnter");
 
-                
+
             }
         }
         else
@@ -68,7 +68,8 @@ public class CameraPointer : MonoBehaviour
         }
     }
 
-    public GameObject getGazed() {
+    public GameObject getGazed()
+    {
         return _gazedAtObject;
     }
 }
