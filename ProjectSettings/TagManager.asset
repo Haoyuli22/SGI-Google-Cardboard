@@ -12,6 +12,7 @@ TagManager:
   - IceBullet
   - PunchBullet
   - PosiEfect
+  - Button
   layers:
   - Default
   - TransparentFX

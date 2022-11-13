@@ -24,17 +24,29 @@ using UnityEngine;
 /// </summary>
 public class CameraPointer : MonoBehaviour
 {
-    private const float _maxDistance = 40;
+    //private const float _maxDistance = 40;
+    public bool navigate_mode = false;
+    private  float _maxDistance = 40f;
     private GameObject _gazedAtObject = null;
 
     public GameObject ObjectGazed = null;
     public Vector3 hitpoint = new Vector3(0, 0, 0);
 
+    private void Start()
+    {
+        if (navigate_mode) {
+            _maxDistance = float.MaxValue;
+        }
+    }
     /// <summary>
     /// Update is called once per frame.
     /// </summary>
     public void Update()
     {
+        if (navigate_mode)
+        {
+            _maxDistance = float.MaxValue;
+        }
         ObjectGazed = _gazedAtObject;
 
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed

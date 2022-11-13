@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class HumanControl : MonoBehaviour
@@ -16,6 +17,8 @@ public class HumanControl : MonoBehaviour
     public GameObject[] positions;
     public GameObject[] positions_effect;
     public int current_position = 0;
+
+    public bool navigate_mode = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +31,20 @@ public class HumanControl : MonoBehaviour
         ControlCamera();
         hit_object = hit_object = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraPointer>().ObjectGazed;
 
-        if (hit_object != null && hit_object.tag == "PosiEfect")
+        if (navigate_mode) {
+            pointer.gameObject.SetActive(true);
+            if (hit_object != null && hit_object.tag == "Button")
+            {
+                GameObject.FindGameObjectWithTag("Button").GetComponent<Button>().interactable = false;
+                if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Joystick1Button2))) {
+                    SceneManager.LoadScene("Scene1");
+                }
+            }
+            else {
+                GameObject.FindGameObjectWithTag("Button").GetComponent<Button>().interactable = true;
+            }
+        }
+        else if (hit_object != null && hit_object.tag == "PosiEfect")
         {
             pointer.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.Mouse1) || Input.GetKeyDown(KeyCode.Joystick1Button3)) {
