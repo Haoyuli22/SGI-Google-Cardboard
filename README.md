@@ -1,3 +1,6 @@
+<hr>
+Game link: https://aileck.itch.io/the-witch-of-the-temple-of-milions-pedres
+<hr>
 Unity 2021.3.6f1
 
 Directory for the project: UPC Másters' course -> SGI-Google-Cardboard VR project.
