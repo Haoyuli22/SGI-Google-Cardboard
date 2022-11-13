@@ -31,7 +31,7 @@ public class LevelController : MonoBehaviour
     void Update()
     {
         string text_to_show = "LEVEL " + level + 
-                               "\n MOSNTERS | " + (enemyToNextLevel - enemyDefeated)  + 
+                               "\n MONSTERS | " + (enemyToNextLevel - enemyDefeated)  + 
                                "\n CRISTAL'S LIFE | " + Mathf.Ceil(CristalCurrentHP) + "/" + Mathf.Ceil(CristalMaxHP);
 
         text.text = text_to_show;
