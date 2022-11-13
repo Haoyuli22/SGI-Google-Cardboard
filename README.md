@@ -26,7 +26,7 @@ Musics:
 </u>
 <h3>Game Description</h3>
 <img src='https://user-images.githubusercontent.com/61742408/201541067-4d1a6f6a-a934-44c8-a1d4-36d39e468911.png'>
-A VR strategy-tower defense game, which you can act as a witch who want to protect the crystal from monster. <br>
+A VR strategy-tower defense game, in which you can act as a witch who want to protect the crystal from monster. <br>
 
 Inspired by <a href="https://store.steampowered.com/app/665340/Ancient_Amuletor_VR/"> Ancient_Amuletor </a>
 
