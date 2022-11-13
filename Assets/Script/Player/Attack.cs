@@ -16,15 +16,18 @@ public class Attack : MonoBehaviour
 
     public int current_select = 0;
 
-    public float attack_periot = 1.5f;
+    public float attack_periot = 0.5f;
     private float attackCounter = 0;
 
-    private float global_charge_time = 4f;
+    private float global_charge_time = 5f;
     private float[] local_charge_time;
 
     private int max_magic_point = 10;
-    private int initial_magic_point = 10;
+    private int initial_magic_point = 2;
     private int[] local_magic_point;
+
+    private float change_aura_cooldown = 0.5f;
+    private float change_aura_counter = 0f;
 
 
     void Start()
@@ -33,10 +36,13 @@ public class Attack : MonoBehaviour
         local_magic_point = new int[magic_pizza.Length];
         for (int i = 0; i < local_charge_time.Length;i++) {
             local_charge_time[i] = 0f;
-            local_magic_point[i] = 3;
+            local_magic_point[i] = initial_magic_point;
+            magic_text[i].text = initial_magic_point.ToString();
 
             magic_charge[i].maxValue = global_charge_time;
             
+
+
         }   
 
         attackCounter = attack_periot;
@@ -46,7 +52,17 @@ public class Attack : MonoBehaviour
     void Update()
     {
         //Scroll up and down
-        ChangeAura();
+        if (change_aura_counter == 0)
+        {
+            ChangeAura();
+        }
+        else {
+            change_aura_counter += Time.deltaTime;
+            if (change_aura_counter >= change_aura_cooldown) {
+                change_aura_counter = 0;
+            }
+        }
+        
 
         for(int i = 0; i < magic_pizza.Length; i++)
         {
@@ -74,7 +90,7 @@ public class Attack : MonoBehaviour
         hit_point = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraPointer>().hitpoint;
 
         //Magic aura controller
-        if (hit_object = null)
+        if (hit_object == null || hit_object.tag == "PosiEfect")
         {
             magic_pizza[current_select].SetActive(false);
         }
@@ -85,24 +101,27 @@ public class Attack : MonoBehaviour
         attackCounter += Time.deltaTime;
         //shootPrefabType2 = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraPointer>().getGazed();
         
-        if (Input.GetKeyDown(KeyCode.Mouse0) && attackCounter >= attack_periot)
+        if ((Input.GetKeyDown(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Joystick1Button2))&& attackCounter >= attack_periot && local_magic_point[current_select] > 0)
         {
+            local_magic_point[current_select]--;
+            
             GameObject projectileGameObject = Instantiate(shootPrefabs[current_select],
                                         new Vector3(magic_pizza[current_select].transform.position.x, 
                                                     magic_pizza[current_select].transform.position.y,
                                                     magic_pizza[current_select].transform.position.z)
                                         , magic_pizza[current_select].transform.rotation, null);
             
-            projectileGameObject.gameObject.tag = "PlayerBullet";
             //projectileGameObject.AddComponent<Bullet>();
             Destroy(projectileGameObject, 2);
 
             attackCounter = 0;
         }
+
+        magic_text[current_select].text = local_magic_point[current_select].ToString();
     }
 
     void ChangeAura() {
-        if (Input.mouseScrollDelta.y > 0)
+        if (Input.mouseScrollDelta.y > 0 || Input.GetAxis("Switch") < -0.75f)
         {
             if (current_select > 0)
             {
@@ -112,9 +131,10 @@ public class Attack : MonoBehaviour
             {
                 current_select = magic_pizza.Length - 1;
             }
+            change_aura_counter += Time.deltaTime;
         }
 
-        if (Input.mouseScrollDelta.y < 0)
+        if (Input.mouseScrollDelta.y < 0|| Input.GetAxis("Switch") > 0.75f)
         {
             if (current_select < magic_pizza.Length - 1)
             {
@@ -124,6 +144,7 @@ public class Attack : MonoBehaviour
             {
                 current_select = 0;
             }
+            change_aura_counter += Time.deltaTime;
         }
     }
 }

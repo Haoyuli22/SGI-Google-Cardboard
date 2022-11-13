@@ -15,6 +15,7 @@ public class EnemyHealthSalider : MonoBehaviour
 
     public void Initiate(float maxHP) {
         healthbar.maxValue = maxHP;
+        healthbar.value = maxHP;
     }
 
     public void UpdateHealth(float currentHP) {

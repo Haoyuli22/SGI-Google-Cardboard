@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227f1882bf8251544831dd877f79ed6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 5
+  maxHP: 10
 --- !u!65 &5486394317795172052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5086b76c5a2b08419bf9fe397b27fb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack_sound: {fileID: 8300000, guid: d392dc227c6699945b4db4a02c68810a, type: 3}
+  lifeColor: {fileID: 7241060502337547806}
   moveSpeed: 3
   followTarget: {fileID: 0}
   attack: 5

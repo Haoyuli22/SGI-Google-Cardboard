@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4209303815669214}
   - component: {fileID: 198827823959745920}
   - component: {fileID: 199019557672395552}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4894,7 +4894,7 @@ GameObject:
   - component: {fileID: 4053910176283684}
   - component: {fileID: 198984371022294480}
   - component: {fileID: 199582695451774396}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GroundGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9795,7 +9795,7 @@ GameObject:
   - component: {fileID: 4454556219693604}
   - component: {fileID: 198444841244502380}
   - component: {fileID: 199861118391691854}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14680,7 +14680,7 @@ GameObject:
   - component: {fileID: 199157687938706244}
   - component: {fileID: 82981306094483294}
   - component: {fileID: 114949111525441046}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Meteor hit 2
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
@@ -19710,7 +19710,7 @@ GameObject:
   - component: {fileID: 4083940084029302}
   - component: {fileID: 198351217071251768}
   - component: {fileID: 199234661689735208}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShockWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24593,7 +24593,7 @@ GameObject:
   - component: {fileID: 4333749239398116}
   - component: {fileID: 198150471654623164}
   - component: {fileID: 199656616439609622}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Distortion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29476,7 +29476,7 @@ GameObject:
   - component: {fileID: 4956491619290550}
   - component: {fileID: 198010980207085660}
   - component: {fileID: 199696817652027276}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Crater
   m_TagString: Untagged
   m_Icon: {fileID: 0}

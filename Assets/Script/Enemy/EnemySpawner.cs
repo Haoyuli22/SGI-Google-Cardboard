@@ -31,7 +31,7 @@ public class EnemySpawner : MonoBehaviour
     private void Update()
     {
         if (waiting) {
-            Debug.Log("Paro");
+            //Debug.Log("Paro");
             waitCounter += Time.deltaTime;
             if (waitCounter >= spawnWait) {
                 waiting = false;

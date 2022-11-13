@@ -36,4 +36,24 @@ public class EnemyDamage : MonoBehaviour
         currentHP -= hit;
         health.UpdateHealth(currentHP);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "PlayerBullet")
+        {
+            Hit(1);
+        }
+
+        if (other.tag == "PunchBullet")
+        {
+            Hit(4);
+            enemy.AttackedByForce();
+        }
+
+        if (other.tag == "IceBullet")
+        {
+            Hit(1);
+            enemy.AttackedByIce();
+        }
+    }
 }

@@ -9,6 +9,9 @@ TagManager:
   - Cristal
   - Level
   - MagicPizza
+  - IceBullet
+  - PunchBullet
+  - PosiEfect
   layers:
   - Default
   - TransparentFX

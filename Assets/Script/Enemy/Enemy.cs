@@ -1,20 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     // Start is called before the first frame update
+    public Image lifeColor;
+    private Color originalColor;
+    
     private Animator anim;
     private AudioSource attack_sound;
 
 
     public float moveSpeed = 5;
+    private float OriginalSpeed = 5;
     public Transform followTarget = null;
 
     public int attack = 5;
     public float attackPeriot = 2;
     private float attackCounter = 5;
+
+    private bool slow = false;
+    private float slowTime = 5;
+    private float slowCounter = 0;
 
     private bool moving = true;
     private bool attacking = false;
@@ -25,6 +34,8 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        originalColor = lifeColor.color;
+        OriginalSpeed = moveSpeed;
         attackCounter = attackPeriot;
         anim = gameObject.GetComponent<Animator>();
         attack_sound = gameObject.GetComponent<AudioSource>();
@@ -33,6 +44,13 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (slow) {
+            slowCounter += Time.deltaTime;
+            if (slowCounter >= slowTime) {
+                slowCounter = 0;
+                NotSlow();
+            }
+        }
         if (died) {
             Destroy(this.gameObject, 1);
         }
@@ -46,6 +64,10 @@ public class Enemy : MonoBehaviour
             }
             else
             {
+                if (this.transform.position.y < 210)
+                {
+                    die = true;
+                }
                 if (moving)
                 {
                     anim.Play("Run");
@@ -84,6 +106,8 @@ public class Enemy : MonoBehaviour
         //transform.rotation = rotationToTarget;
     }
 
+
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Cristal") {
@@ -113,5 +137,26 @@ public class Enemy : MonoBehaviour
         float angle = Vector3.SignedAngle(Vector3.down, (followTarget.position - transform.position).normalized, Vector3.forward);
         Quaternion rotationToTarget = Quaternion.Euler(0, 0, angle);
         return rotationToTarget;
+    }
+
+    public void AttackedByIce() {
+        if (slow == false) {
+            slow = true;
+            moveSpeed = (moveSpeed / 2);
+            lifeColor.color = Color.blue;
+            //Change life color
+        }
+    }
+
+    private void NotSlow() {
+        slow = false;
+        moveSpeed = OriginalSpeed;
+        lifeColor.color = originalColor;
+        //Change life color
+    }
+
+    public void AttackedByForce()
+    {
+        this.gameObject.GetComponent<Rigidbody>().AddForce(new Vector3(0f,300f,190f));
     }
 }

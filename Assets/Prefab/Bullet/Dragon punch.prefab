@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4636571161344460}
   - component: {fileID: 198289189322837454}
   - component: {fileID: 199066954313123128}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShockWave2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4832,7 +4832,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 11390ab8a8dd6024497b9ff5ba722ce2, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4894,7 +4893,7 @@ GameObject:
   - component: {fileID: 4125193918556640}
   - component: {fileID: 198758580150369580}
   - component: {fileID: 199133210213673012}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Aura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9733,7 +9732,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cf2d5b6f125768848a68a196a2546747, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9795,7 +9793,7 @@ GameObject:
   - component: {fileID: 4427427002656578}
   - component: {fileID: 198925632886248434}
   - component: {fileID: 199269803498556858}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SubSparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14567,7 +14565,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 12fb1d84a82a2de4f8b3e8b1f2747b43, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14629,7 +14626,7 @@ GameObject:
   - component: {fileID: 4401129385627236}
   - component: {fileID: 198098356304758926}
   - component: {fileID: 199311448932665044}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Aura2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19468,7 +19465,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: cf2d5b6f125768848a68a196a2546747, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19530,7 +19526,7 @@ GameObject:
   - component: {fileID: 4530749725137474}
   - component: {fileID: 198322084645824018}
   - component: {fileID: 199734008412556790}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Magic circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24360,7 +24356,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 00ea7adf058ab22418b23bbc22c96aa6, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24422,7 +24417,7 @@ GameObject:
   - component: {fileID: 4941511100116100}
   - component: {fileID: 198174116313923256}
   - component: {fileID: 199643859439662718}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29262,7 +29257,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d5dfb7b499f5de840871d37b9f54d073, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29324,7 +29318,7 @@ GameObject:
   - component: {fileID: 4578709713986376}
   - component: {fileID: 198914814386278040}
   - component: {fileID: 199653271867406588}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34172,7 +34166,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 12fb1d84a82a2de4f8b3e8b1f2747b43, type: 2}
-  - {fileID: 2100000, guid: 12fb1d84a82a2de4f8b3e8b1f2747b43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34234,7 +34227,7 @@ GameObject:
   - component: {fileID: 4620600428261900}
   - component: {fileID: 198683791625177844}
   - component: {fileID: 199763377604216674}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Shine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39064,7 +39057,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 30c424462325f0f4fa38fcc7ddc6798d, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39126,7 +39118,7 @@ GameObject:
   - component: {fileID: 4283458665688142}
   - component: {fileID: 198536107425798552}
   - component: {fileID: 199279815038165804}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: RayWaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43907,7 +43899,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 253697e4c104e18448b4e6aa05e6007e, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -43969,9 +43960,11 @@ GameObject:
   - component: {fileID: 4833421747575682}
   - component: {fileID: 198646846901175090}
   - component: {fileID: 199569954839013096}
-  m_Layer: 0
+  - component: {fileID: 1319961742519419840}
+  - component: {fileID: 2290614803437388487}
+  m_Layer: 2
   m_Name: Dragon punch
-  m_TagString: Untagged
+  m_TagString: PunchBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48833,7 +48826,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: dd19e1cff6a8f1a448924a373d58c797, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48884,6 +48876,35 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!54 &1319961742519419840
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873886433987638}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &2290614803437388487
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873886433987638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.0828967, z: 7.6907983}
+  m_Center: {x: 0, y: 0.54144835, z: 3.3453991}
 --- !u!1 &1931102524043194
 GameObject:
   m_ObjectHideFlags: 0
@@ -48895,7 +48916,7 @@ GameObject:
   - component: {fileID: 4322228257591674}
   - component: {fileID: 198118611656635510}
   - component: {fileID: 199131534166488308}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShockWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53716,7 +53737,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 11390ab8a8dd6024497b9ff5ba722ce2, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -53778,7 +53798,7 @@ GameObject:
   - component: {fileID: 4721121102163750}
   - component: {fileID: 198755675511292570}
   - component: {fileID: 199645296618557068}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SubSmoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58541,7 +58561,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0777b310bf3c3714b90d5166da01f666, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58603,7 +58622,7 @@ GameObject:
   - component: {fileID: 4494285928642610}
   - component: {fileID: 198091103585431972}
   - component: {fileID: 199844693287189030}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63424,7 +63443,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d5dfb7b499f5de840871d37b9f54d073, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

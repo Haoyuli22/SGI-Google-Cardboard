@@ -31,11 +31,11 @@ public class LevelController : MonoBehaviour
     void Update()
     {
         string text_to_show = "LEVEL " + level + 
-                               "\n MOSNTERS | " + enemyDefeated + "/" + enemyToNextLevel + 
+                               "\n MOSNTERS | " + (enemyToNextLevel - enemyDefeated)  + 
                                "\n CRISTAL'S LIFE | " + Mathf.Ceil(CristalCurrentHP) + "/" + Mathf.Ceil(CristalMaxHP);
 
         text.text = text_to_show;
-        if (enemyToNextLevel == 0) {
+        if ((enemyToNextLevel - enemyDefeated) == 0) {
             level++;
             int monster_to_defeat = 20 + (level - 1) * 5;
             foreach (GameObject sp in spawners)
@@ -43,6 +43,9 @@ public class LevelController : MonoBehaviour
                 sp.GetComponent<EnemySpawner>().ResetSpawner(monster_to_defeat);
             }
             enemyToNextLevel = monster_to_defeat * spawners.Length;
+            enemyDefeated = 0;
+            CristalCurrentHP += 100;
+            CristalMaxHP += 100;
         }
     }
 
