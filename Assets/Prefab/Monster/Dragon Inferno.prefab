@@ -1396,7 +1396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeColor: {fileID: 2758348078211086967}
-  moveSpeed: 5
+  moveSpeed: 4
   followTarget: {fileID: 0}
   attack: 1
   attackPeriot: 2
@@ -1538,8 +1538,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.8423905, y: 3.5455697, z: 1}
-  m_Center: {x: 0.15615672, y: 1.2727848, z: 0}
+  m_Size: {x: 1.4875588, y: 3.5455697, z: 1}
+  m_Center: {x: 0.10548234, y: 1.2727848, z: 0}
 --- !u!1 &3319832262097768167
 GameObject:
   m_ObjectHideFlags: 0

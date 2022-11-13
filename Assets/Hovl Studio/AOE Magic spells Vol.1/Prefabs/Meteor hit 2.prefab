@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4209303815669214}
   - component: {fileID: 198827823959745920}
   - component: {fileID: 199019557672395552}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4832,7 +4832,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 85455188b71fea741bd0b80cbe893384, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4894,7 +4893,7 @@ GameObject:
   - component: {fileID: 4053910176283684}
   - component: {fileID: 198984371022294480}
   - component: {fileID: 199582695451774396}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GroundGlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9733,7 +9732,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0ae5b07cb509ca04ab936aa7e86e8ce9, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9795,7 +9793,7 @@ GameObject:
   - component: {fileID: 4454556219693604}
   - component: {fileID: 198444841244502380}
   - component: {fileID: 199861118391691854}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14616,7 +14614,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 4b963661ff30bb44cb43409db4141e79, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14683,7 +14680,7 @@ GameObject:
   - component: {fileID: 4730273940591686270}
   - component: {fileID: -143627089296373580}
   - component: {fileID: -9076624124474878437}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Meteor hit 2
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
@@ -19510,7 +19507,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 35f5e6dc715494f44b17248eee5426bd, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19728,10 +19724,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1
+  m_Radius: 1.2196894
+  m_Height: 2.4393787
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0.018776178, y: 0.3720255, z: 0.32539082}
 --- !u!114 &-9076624124474878437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19756,7 +19752,7 @@ GameObject:
   - component: {fileID: 4083940084029302}
   - component: {fileID: 198351217071251768}
   - component: {fileID: 199234661689735208}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: ShockWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24577,7 +24573,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 3fb4dd6717300544a8015ff660826310, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24639,7 +24634,7 @@ GameObject:
   - component: {fileID: 4333749239398116}
   - component: {fileID: 198150471654623164}
   - component: {fileID: 199656616439609622}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Distortion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29460,7 +29455,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 630ddcbab420440459087f91bcd9f4c6, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29522,7 +29516,7 @@ GameObject:
   - component: {fileID: 4956491619290550}
   - component: {fileID: 198010980207085660}
   - component: {fileID: 199696817652027276}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Crater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34361,7 +34355,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: ffbf1de599dba82428751c025f3668d9, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

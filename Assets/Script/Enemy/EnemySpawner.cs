@@ -22,6 +22,9 @@ public class EnemySpawner : MonoBehaviour
     // The most recent spawn time
     private float lastSpawnTime = Mathf.NegativeInfinity;
 
+    public float spawnRangeZ = 5.0f;
+
+
     public void ResetSpawner(int max)
     {
         maxSpawn = max;
@@ -95,7 +98,7 @@ public class EnemySpawner : MonoBehaviour
 
     protected virtual Vector3 GetSpawnLocation()
     {
-
-        return new Vector3(transform.position.x, transform.position.y, transform.position.z);
+        float z = Random.Range(0 - spawnRangeZ, spawnRangeZ);
+        return new Vector3(transform.position.x, transform.position.y, transform.position.z + z);
     }
 }

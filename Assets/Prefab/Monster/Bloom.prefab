@@ -1321,7 +1321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeColor: {fileID: 7241060502337547806}
-  moveSpeed: 3
+  moveSpeed: 2
   followTarget: {fileID: 0}
   attack: 5
   attackPeriot: 2

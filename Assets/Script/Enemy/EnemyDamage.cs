@@ -41,7 +41,7 @@ public class EnemyDamage : MonoBehaviour
     {
         if (other.tag == "PlayerBullet")
         {
-            Hit(1);
+            Hit(2);
         }
 
         if (other.tag == "PunchBullet")
@@ -52,7 +52,7 @@ public class EnemyDamage : MonoBehaviour
 
         if (other.tag == "IceBullet")
         {
-            Hit(1);
+            Hit(2);
             enemy.AttackedByIce();
         }
     }

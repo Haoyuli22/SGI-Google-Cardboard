@@ -19,7 +19,7 @@ public class Attack : MonoBehaviour
     public float attack_periot = 0.5f;
     private float attackCounter = 0;
 
-    private float global_charge_time = 5f;
+    private float global_charge_time = 3f;
     private float[] local_charge_time;
 
     private int max_magic_point = 10;

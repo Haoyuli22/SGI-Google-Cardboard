@@ -1002,10 +1002,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeColor: {fileID: 6527848769810394669}
-  moveSpeed: 8
+  moveSpeed: 5
   followTarget: {fileID: 0}
   attack: 3
-  attackPeriot: 2
+  attackPeriot: 1
   die: 0
   died: 0
 --- !u!114 &7591092520725884664
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227f1882bf8251544831dd877f79ed6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 15
+  maxHP: 20
 --- !u!114 &8841098315463001358
 MonoBehaviour:
   m_ObjectHideFlags: 0

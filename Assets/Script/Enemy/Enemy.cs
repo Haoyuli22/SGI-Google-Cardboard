@@ -106,24 +106,40 @@ public class Enemy : MonoBehaviour
         //transform.rotation = rotationToTarget;
     }
 
-
-
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Cristal") {
+        if (other.tag == "Cristal")
+        {
             moving = false;
             attacking = true;
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if (collision.gameObject.tag == "Cristal")
+        if (other.tag == "Cristal")
         {
             moving = true;
             attacking = false;
         }
     }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Cristal") {
+    //        moving = false;
+    //        attacking = true;
+    //    }
+    //}
+
+    //private void OnCollisionExit(Collision collision)
+    //{
+    //    if (collision.gameObject.tag == "Cristal")
+    //    {
+    //        moving = true;
+    //        attacking = false;
+    //    }
+    //}
 
     private Vector3 GetFollowMovement()
     {

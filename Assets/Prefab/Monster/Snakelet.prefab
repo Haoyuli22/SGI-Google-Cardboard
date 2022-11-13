@@ -1612,9 +1612,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeColor: {fileID: 5083965382621795743}
-  moveSpeed: 10
+  moveSpeed: 8
   followTarget: {fileID: 0}
-  attack: 5
+  attack: 3
   attackPeriot: 2
   die: 0
   died: 0

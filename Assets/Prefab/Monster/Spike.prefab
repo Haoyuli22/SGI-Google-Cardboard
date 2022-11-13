@@ -513,7 +513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeColor: {fileID: 1753250616344557059}
-  moveSpeed: 1
+  moveSpeed: 2
   followTarget: {fileID: 0}
   attack: 5
   attackPeriot: 1
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227f1882bf8251544831dd877f79ed6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 35
+  maxHP: 25
 --- !u!114 &6404007129807537229
 MonoBehaviour:
   m_ObjectHideFlags: 0

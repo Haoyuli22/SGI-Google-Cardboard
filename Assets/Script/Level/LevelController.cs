@@ -21,9 +21,9 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         CristalCurrentHP = CristalMaxHP;
-        enemyToNextLevel = 20 * spawners.Length;
+        enemyToNextLevel = 10 * spawners.Length;
         foreach (GameObject sp in spawners) {
-            sp.GetComponent<EnemySpawner>().ResetSpawner(20);
+            sp.GetComponent<EnemySpawner>().ResetSpawner(10);
         }
     }
 
