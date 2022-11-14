@@ -38,7 +38,7 @@ But using magic doesn't come for free, you must follow by certain rules.<br>
 We have developed 3 types of magic.<br>
 <img src='https://user-images.githubusercontent.com/61742408/201541168-ced85cda-ab21-44ff-a10c-ca6c12ca5f5d.png'>
 
-<h3>Assets</h3>
+<h3>External Assets</h3>
 https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-series-free-103633
 https://assetstore.unity.com/packages/3d/characters/creatures/monsters-ultimate-pack-02-cute-series-179083
 https://assetstore.unity.com/packages/3d/environments/fantasy/eternal-temple-65780
