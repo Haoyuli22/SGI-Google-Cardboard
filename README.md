@@ -16,7 +16,6 @@ Base task:
 Credits:
 <ul>
 <li>Xinyu Jiang (xinyu.jiang@estudiantat.upc.edu) .</li>
-<li>Haoyu Li (haoyu.li@estudiantat.upc.edu) .</li>
 </ul>
 Musics:
 <ul>
